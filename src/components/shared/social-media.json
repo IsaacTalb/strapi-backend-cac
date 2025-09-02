@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_social_medias",
+  "info": {
+    "displayName": "socialMedia",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "Platform": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
