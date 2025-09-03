@@ -55,7 +55,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post",
-      "mappedBy": "news_category"
+      "mappedBy": "newsCategory"
     }
   }
 }

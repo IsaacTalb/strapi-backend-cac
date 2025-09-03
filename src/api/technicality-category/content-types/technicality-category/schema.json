@@ -54,7 +54,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post",
-      "mappedBy": "technicality_category"
+      "mappedBy": "technicalityCategory"
     }
   }
 }

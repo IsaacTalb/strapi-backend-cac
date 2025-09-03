@@ -466,10 +466,10 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
       'api::global.global'
     > &
       Schema.Attribute.Private;
-    phone_one: Schema.Attribute.BigInteger &
+    phoneOne: Schema.Attribute.BigInteger &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    phone_two: Schema.Attribute.BigInteger &
+    phoneTwo: Schema.Attribute.BigInteger &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     projects: Schema.Attribute.Integer;
@@ -842,7 +842,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
       Schema.Attribute.DefaultTo<'Set your description here'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::post.post'>;
-    news_category: Schema.Attribute.Relation<
+    newsCategory: Schema.Attribute.Relation<
       'manyToOne',
       'api::news-category.news-category'
     >;
@@ -861,7 +861,6 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
         };
       }>;
     reportYear: Schema.Attribute.BigInteger &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -886,7 +885,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    technicality_category: Schema.Attribute.Relation<
+    technicalityCategory: Schema.Attribute.Relation<
       'manyToOne',
       'api::technicality-category.technicality-category'
     >;
@@ -905,7 +904,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
         };
       }> &
       Schema.Attribute.DefaultTo<'Set your title here'>;
-    type: Schema.Attribute.Enumeration<['news', 'technicality']> &
+    type: Schema.Attribute.Enumeration<['news', 'technicality', 'report']> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

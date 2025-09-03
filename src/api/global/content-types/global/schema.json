@@ -35,12 +35,12 @@
       "repeatable": false,
       "required": true
     },
-    "phone_one": {
+    "phoneOne": {
       "type": "biginteger",
       "required": true,
       "unique": true
     },
-    "phone_two": {
+    "phoneTwo": {
       "type": "biginteger",
       "required": true,
       "unique": true
